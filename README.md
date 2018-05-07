@@ -8,10 +8,10 @@ system in its current state, you must run these individual elements locally.
 
 Overall steps for running our system:
 
-- *Please note that both flask servers must be started first before trying out the client!*
-
 1. Start both flask servers (one for PUBG stats, one for twitter sentiment) 
 2. Start the client
+
+- *Please note that both flask servers must be started first before trying out the client!*
 
 Guide for starting Daniel Stewart's client/web portal:
 
