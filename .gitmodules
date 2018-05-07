@@ -1,0 +1,9 @@
+[submodule "dastew02-pubg-client-final"]
+	path = dastew02-pubg-client-final
+	url = https://github.com/dasiii/pubg-client-final
+[submodule "sansell-pubg-sentiment"]
+	path = sansell-pubg-sentiment
+	url = https://github.com/SamAnsell/CIS400-Final-Project.git
+[submodule "sahaws-pubg-battlestats"]
+	path = sahaws-pubg-battlestats
+	url = https://github.com/SamuelHaws/battlestats-pubg.git
