@@ -31,3 +31,4 @@ Guide for starting Daniel Stewart's client/web portal:
 - Click 'Player Stats' and enter a players in-game name to make a GET request over to one of the Flask servers, and present their player data to the user
 - Click 'Twitter Sentiment' which will make a GET request over to one of the Flask servers, and present the Twitter sentiment data provided as a line graph to the user
 - If there are any problems running this part of the software locally, please shoot me an email at dastew02@syr.edu
+- Please note that both flask servers must be started first before trying out the client!
