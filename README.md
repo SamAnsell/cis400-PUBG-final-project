@@ -23,10 +23,10 @@ Guide for starting the twitter sentiment program:
   * pymongo
   * flask
 * To verify each install, simply enter in the terminal/cmd (without ''):
-  * $ 'name of package' -v
-  * 'name of package' --version
+  * `$ 'name of package' -v`
+  * `> 'name of package' --version`
 * Once all dependencies have been properly installed, cd into the '/sansell-pubg-sentiment/' folder, then:
-  * python MainFile.py     - into the command prompt
+  * `> python MainFile.py`     - into the command prompt
 * After a minute or two you should start seeing information about Flask.
 * You can now move onto the client/web portal part of the project!
 * If there are any problems running this part of the software locally, please send me an email at sansell@syr.edu
