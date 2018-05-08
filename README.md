@@ -6,12 +6,12 @@ Our initial plans were to have all three parts of our system hosted live on Hero
 however we have ran into problems deploying python/flask servers. Therefore, to test our
 system in its current state, you must run these individual elements locally.
 
-Overall steps for running our system:
+Overall steps for running our web sentiment analysis system:
 
-1. Start both flask servers (one for PUBG stats, one for twitter sentiment) 
+1. Start flask server for twitter sentiment
 2. Start the client
 
-- *Please note that both flask servers must be started first before trying out the client!*
+- *Please note that flask server must be started first before trying out the client!*
 
 Guide for starting Daniel Stewart's client/web portal:
 
@@ -33,3 +33,12 @@ Guide for starting Daniel Stewart's client/web portal:
 - Click 'Player Stats' and enter a players in-game name to make a GET request over to one of the Flask servers, and present their player data to the user
 - Click 'Twitter Sentiment' which will make a GET request over to one of the Flask servers, and present the Twitter sentiment data provided as a line graph to the user
 - If there are any problems running this part of the software locally, please shoot me an email at dastew02@syr.edu
+
+Guide for running PUBG API Mining program:
+
+* The part of the program that utilizes the PUBG developer API was developed by Samuel Haws. There was an error in returning the results of the program run through a flask server to the web client, however, the program is fully functional as a standalone python application. This application is written in Python 3.6, and can be run from the command line as per the usual method of navigating to the directory and typing "CIS400_PUBG.py". 
+* The program uses a few dependencies/packages, all of which are easily pip installed (listed in source).
+* The program has two separate functionalities: a weapon stats functionality, and a map player position trace functionality.
+* The weapon stats are represented in three different count dictionaries: # of times the specified player attacked with each weapon over most recent (specified number) of matches, # of kills with each weapon, and the ratio of kills to attacks for each weapon. 
+* The player position trace function is commented out by default (along with its call in the main getPlayerStats) so that the user can first easily view weapon stats. To use map functionality, uncomment these two items, and follow instructions in source to fetch base map image file. 
+* If there are any questions with this program, please reach out to me at sahaws@syr.edu.
