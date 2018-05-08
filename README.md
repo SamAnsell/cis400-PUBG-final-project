@@ -13,7 +13,26 @@ Overall steps for running our web sentiment analysis system:
 
 - *Please note that flask server must be started first before trying out the client!*
 
-Guide for starting Daniel Stewart's client/web portal:
+Guide for starting the twitter sentiment program:
+
+* You will need to download a few python packages to run this part of the project.
+  * This should be done in the route folder of the overall project directory.
+* Namely:
+  * twitter
+  * request
+  * pymongo
+  * flask
+* To verify each install, simply enter in the terminal/cmd (without ''):
+  * $ 'name of package' -v
+  * > 'name of package' --version
+* Once all dependencies have been properly installed, cd into the '/sansell-pubg-sentiment/' folder, then:
+  * > python MainFile.py     - into the command prompt
+* After a minute or two you should start seeing information about Flask.
+* You can now move onto the client/web portal part of the project!
+* If there are any problems running this part of the software locally, please send me an email at sansell@syr.edu
+
+
+Guide for starting the client/web portal:
 
 * The client is successfully deployed at https://pubg-client.herokuapp.com/
 * However, because we were not able to deploy the other pieces on Heroku, you must also run the client locally.
@@ -34,7 +53,8 @@ Guide for starting Daniel Stewart's client/web portal:
 - Click 'Twitter Sentiment' which will make a GET request over to one of the Flask servers, and present the Twitter sentiment data provided as a line graph to the user
 - If there are any problems running this part of the software locally, please shoot me an email at dastew02@syr.edu
 
-Guide for running PUBG API Mining program:
+
+Guide for running the PUBG API Mining program:
 
 * The part of the program that utilizes the PUBG developer API was developed by Samuel Haws. There was an error in returning the results of the program run through a flask server to the web client, however, the program is fully functional as a standalone python application. This application is written in Python 3.6, and can be run from the command line as per the usual method of navigating to the directory and typing "CIS400_PUBG.py". 
 * The program uses a few dependencies/packages, all of which are easily pip installed (listed in source).
