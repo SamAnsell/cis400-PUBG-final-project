@@ -13,7 +13,7 @@ Overall steps for running our web sentiment analysis system:
 
 - *Please note that flask server must be started first before trying out the client!*
 
-Guide for starting the twitter sentiment program:
+Guide for starting Samuel Ansell's twitter sentiment aspect of the project:
 
 * You will need to download a few python packages to run this part of the project.
   * This should be done in the route folder of the overall project directory.
@@ -25,14 +25,14 @@ Guide for starting the twitter sentiment program:
 * To verify each install, simply enter in the terminal/cmd (without ''):
   * `$ 'name of package' -v`
   * `> 'name of package' --version`
-* Once all dependencies have been properly installed, cd into the '/sansell-pubg-sentiment/' folder, then:
+* Once all dependencies have been properly installed, `cd` into the '/sansell-pubg-sentiment/' folder, then:
   * `> python MainFile.py`     - into the command prompt
 * After a minute or two you should start seeing information about Flask.
 * You can now move onto the client/web portal part of the project!
 * If there are any problems running this part of the software locally, please send me an email at sansell@syr.edu
 
 
-Guide for starting the client/web portal:
+Guide for starting Daniel Stewart's client/web portal:
 
 * The client is successfully deployed at https://pubg-client.herokuapp.com/
 * However, because we were not able to deploy the other pieces on Heroku, you must also run the client locally.
@@ -40,14 +40,14 @@ Guide for starting the client/web portal:
   * If you are on a Mac, I recommend installing with Homebrew:
     * https://www.dyclassroom.com/howto-mac/how-to-install-nodejs-and-npm-on-mac-using-homebrew
   * To verify the install, the following commands should both produce version numbers:
-    * $ node -v
-    * $ npm -v
-* Once node has been installed, cd into the dastew02-client/ directory
+    * `$ node -v`
+    * `$ npm -v`
+* Once node has been installed, `cd` into the dastew02-client/ directory
 
-- ls, and verify there is indeed a file titled 'package.json'
+- `ls`, and verify there is indeed a file titled 'package.json'
 
-* run 'npm install' - which may take several minutes (installing all dependencies in package.json)
-* run 'npm start' - this will launch the local development server at localhost:3000 (and should automatically open in the browser)
+* run `npm install` - which may take several minutes (installing all dependencies in package.json)
+* run `npm start` - this will launch the local development server at localhost:3000 (and should automatically open in the browser)
 
 - Click 'Player Stats' and enter a players in-game name to make a GET request over to one of the Flask servers, and present their player data to the user
 - Click 'Twitter Sentiment' which will make a GET request over to one of the Flask servers, and present the Twitter sentiment data provided as a line graph to the user
